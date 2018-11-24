@@ -1,0 +1,107 @@
+---
+# LLVM, Google, Chromium, Mozilla, WebKit
+BasedOnStyle: LLVM
+UseTab: Never
+IndentWidth: 4
+AccessModifierOffset: -4
+ColumnLimit: 0
+
+AllowShortFunctionsOnASingleLine: true
+Cpp11BracedListStyle: true
+BreakStringLiterals: true
+IndentCaseLabels: true
+IndentWrappedFunctionNames: false # void \n -- func() -> void \n func()
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+MaxEmptyLinesToKeep: 2
+
+BreakBeforeTernaryOperators: true
+BreakBeforeBinaryOperators: None
+AlignAfterOpenBracket: true
+AlignConsecutiveAssignments: true
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  IndentBraces: true
+  AfterClass: true
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: true
+  AfterNamespace: true
+  AfterObjCDeclaration: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeCatch: false
+  BeforeElse: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+# -- COMMENTS
+ReflowComments: true
+SpacesBeforeTrailingComments: 1
+
+# -- INCLUDES
+SortIncludes: true
+IncludeBlocks: Regroup
+SortUsingDeclarations: true
+
+# -- NAMESPACES
+NamespaceIndentation: All
+CompactNamespaces: false
+FixNamespaceComments: true
+
+
+
+# -- SPACE Before
+SpaceBeforeParens:                    ControlStatements
+SpaceBeforeAssignmentOperators:       true
+# TODO: sda
+# WARN: dsa
+# SpaceBeforeRangeBasedForLoopColon:  true  # WARN: Not working
+# SpaceBeforeCpp11BracedList:         true  # !!!: Not working
+# SpaceBeforeCtorInitializerColon:    false # ???: Not working
+# SpaceBeforeInheritanceColon:        false # !!!: Not working
+
+
+# -- SPACE In
+SpacesInCStyleCastParentheses:  true
+SpacesInParentheses:            true
+SpaceInEmptyParentheses:        false
+SpacesInContainerLiterals:      false
+SpacesInAngles:                 false
+SpacesInSquareBrackets:         false
+
+# -- SPACE After
+SpaceAfterTemplateKeyword:  true
+SpaceAfterCStyleCast:       true
+
+# -- CONSTRUCTOR Initializers
+# -- BeforeColon, BeforeComma, AfterColon
+ConstructorInitializerIndentWidth:              4
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+BreakConstructorInitializers:                   BeforeColon
+# BreakInheritanceList:                         BeforeColon # !!!: Not working
+
+
+
+# ---
+# Language: Cpp
+# # Standard: Cpp11
+# DerivePointerAlignment: false
+# PointerAlignment: Right
+# BreakAfterJavaFieldAnnotations: false
+# ForEachMacros: ['RANGES_FOR', 'FOREACH', 'BOOST_FOREACH']
+# IndentPPDirectives: AfterHash
+# # // CommentPragmas: "^ FOOBAR pragma:" # -- #include <vector> // FOOBAR pragma: keep
+# ---
+# Language: JavaScript
+# JavaScriptQuotes: Single
+# JavaScriptWrapImports: false
+# ---
+# Language: Proto
+# DisableFormat: true
+# ---
+# Language: TextProto
+# DisableFormat: true
